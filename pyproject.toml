@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "poetry-demo"
+version = "0.1.0"
+description = "A starting point for Python apps using Poetry and Docker."
+authors = ["Marius Lupulescu <m.a.lupulescu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.1"
+pandas = "^2.0.0"
+numpy = "^1.24.0"
+matplotlib = "^3.7.0"
+seaborn = "^0.12.2"
+plotly = "^5.14.0"
+sqlalchemy = "^2.0.0"
+pyspark = "^3.4.0"
+psycopg2 = "^2.9.6"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.0"
+dask = "^2023.5.0"
+os = "*"
+urllib3 = "^2.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

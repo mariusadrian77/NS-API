@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.231.6/containers/python-3
+{
+	"name": "Python 3",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	// Set *default* container specific settings.json values on container create.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"python.pythonPath": "/usr/local/bin/python",
+				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+				"files.insertFinalNewline": true,
+				"files.trimFinalNewlines": true,
+				"files.trimTrailingWhitespace": true,
+				"editor.quickSuggestions": {
+					"strings": true
+				},
+				"editor.formatOnSave": true
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				"ms-python.pylint",
+				"ms-vscode-remote.vscode-remote-extensionpack",
+				"njpwerner.autodocstring",
+				"mechatroner.rainbow-csv",
+				"GrapeCity.gc-excelviewer",
+				"ms-python.vscode-pylance",
+				"GitHub.vscode-pull-request-github",
+				"ms-python.black-formatter",
+				"ms-toolsai.datawrangler",
+				"ms-azuretools.vscode-docker",
+				"zeshuaro.vscode-python-poetry"
+			]
+		}
+	}
+}
