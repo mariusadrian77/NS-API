@@ -20,7 +20,6 @@ psycopg2 = "^2.9.6"
 requests = "^2.31.0"
 beautifulsoup4 = "^4.12.0"
 dask = "^2023.5.0"
-os = "*"
 urllib3 = "^2.0.0"
 
 
